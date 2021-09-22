@@ -3,6 +3,7 @@ package com.designpatterns;
 import java.util.Scanner;
 
 import com.designpatterns.patterns.facade.Facade;
+import com.designpatterns.patterns.singleton.App;
 
 /**
  * Hello world!
@@ -20,11 +21,13 @@ public final class HandleUserOption {
         switch (INSTANCE_HANDLE_OPTION.option)
         {
             case 1:
-                Logger.log("Ejecutando el programa correspondiente. El patrón usado será Singleton.");
+                App.main();
+                Logger.log("Se ejecutó el programa correspondiente. El patrón usado fue Singleton.");
                 break;
             case 2:
                 Facade appFacade = new Facade();
                 appFacade.main();
+                Logger.log("Se ejecutó el programa correspondiente. El patrón usado fue FaÇade.");
                 break;
             case 0:
                 shouldAppExit = Boolean.TRUE;
