@@ -15,11 +15,11 @@ public class Menu {
     }
 
     private void printOptions() {
-        Logger.log("");
+        Logger.log();
         Logger.log("1: Singleton");
         Logger.log("2: Facade");
         Logger.log("0: Salir de la ejecución actual.");
-        Logger.log("");
+        Logger.log();
     }
 
     public void getOptions() {
